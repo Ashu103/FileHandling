@@ -1,0 +1,15 @@
+import random
+file1='random1.txt','w'
+line=[]
+for i in range(10):
+    a =(random.randint(0, 50))
+    line.append(a)
+print(line)
+line.sort()
+print(line)
+r1=file1.read()
+file2='random2.txt','w'
+file2.write(r1)
+print(r1)
+file1.close()
+file2.close()

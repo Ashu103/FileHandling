@@ -1,0 +1,7 @@
+f=open('backtrack.txt', 'r')
+lines=f.readlines()
+for l in lines:
+    print(l)
+lines.reverse()
+for l in lines:
+    print(l)

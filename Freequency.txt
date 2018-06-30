@@ -1,0 +1,8 @@
+f = open('freequency.txt','r')
+words_dict={}
+for i in f.read().split():
+  word=i.lower()
+  words_dict[word]= words_dict.get(word,0) + 1
+  for key in words_dict.keys():
+    print (str(key)+' = '+str(words_dict[key]))
+f.close()
